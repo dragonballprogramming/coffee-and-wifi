@@ -1,0 +1,218 @@
+body {
+  background-image: url('/static/img/beans-img.jpeg');
+  color: #C3794E;
+    /*background-color: #8E806A;*/
+
+}
+
+hr {
+    background-color: #C3794E;
+    color: #C3794E;
+    border-color: transparent;
+    height: 3px;
+}
+
+a {
+    color: #C3794E;
+}
+
+.top-title {
+    text-align: center;
+    padding: 25px;
+    margin: 5% 10%;
+    background-color: #FFE6BC;
+}
+
+.coffee-img {
+    height: 40px;
+    width: 40px;
+}
+
+.cafes_list {
+  text-align: center;
+  /*padding: 25px;*/
+  /*margin: 5% 10% 0% 10%;*/
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+
+  /*padding-bottom: 20px;*/
+  background-color: #FFE6BC;
+  /*margin: 5% 10%;*/
+}
+
+.add_cafe {
+  text-align: center;
+  margin: 10%;
+  margin-right: 20%;
+  background-color: #FFE6BC;
+}
+
+.cafe_info {
+  background-color: #FFE6BC;
+  margin: 10%;
+  padding: 10%;
+}
+
+/*Comments Section */
+
+.commentList {
+  background-color: #FFE6BC;
+  margin: 10%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: 100px;
+}
+
+.newcomment {
+  margin: 10%;
+}
+
+
+/*heading and navbar*/
+.navbar {
+  padding: 2%;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 800;
+  color: #C3794E;
+  /*padding: 5%;*/
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #C3794E;
+}
+
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: #FFE6BC;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  #mainNav .navbar-brand {
+    padding: 5px 10px;
+    color: #C3794E;
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #C3794E;
+  }
+  #mainNav .navbar-nav > li.nav-item > a {
+    padding: 10px 20px;
+    color: #C3794E;
+  }
+  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+    color: #C3794E;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -67px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: #FFE6BC;
+  }
+
+  #mainNav.is-fixed .navbar-brand {
+    color: #C3794E;
+  }
+
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #C3794E;
+  }
+
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #C3794E;
+  }
+
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #C3794E;
+  }
+
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+
+
+  footer {
+    padding: 50px 0 65px;
+    color: #C3794E;
+  }
+
+  footer .list-inline {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  .btn-primary {
+    background-color: #C3794E;
+    border-color: #0085A1;
+  }
+
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #00657b !important;
+    border-color: #00657b !important;
+  }
+
+  .btn-lg {
+    font-size: 16px;
+    padding: 25px 35px;
+  }
+}
+/* Set the size of the div element that contains the map */
+#map {
+  margin: 10%;
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 80%;
+  /* The width is the width of the web page */
+}
