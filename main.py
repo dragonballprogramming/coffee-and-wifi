@@ -67,7 +67,7 @@ class Users(db.Model, UserMixin):
     name = db.Column(db.String(250), nullable=False)
     posts = relationship("Cafe", back_populates="author")
     comments = relationship("Comment", back_populates="comment_author")
-db.create_all()
+# db.create_all()
 
 ##Cafe TABLE Configuration
 class Cafe(db.Model):
@@ -90,7 +90,7 @@ class Cafe(db.Model):
     # ********************Parent Relationship************************#
     comments = relationship("Comment", back_populates="parent_post")
 
-db.create_all()
+# db.create_all()
 
 class Comment(db.Model):
     __tablename__ = "comments"
